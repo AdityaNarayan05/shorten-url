@@ -15,7 +15,7 @@ RUN go build -o main .
 FROM alpine
 
 # Create a non-root user for running the application
-RUN adduser -S -D -H appuser
+RUN adduser -S -D -H -h appuser
 
 USER appuser
 
